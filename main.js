@@ -18,8 +18,8 @@ function toggleMenu() {
         menu.classList.add("navMenu");
         close.style.display = "block";
         nav.style.display = "none";
-        menu.style.width = "120rem";
-        menu.style.height = "151rem";
+        menu.style.width = "40rem";
+        menu.style.height = "70rem";
     }
 }
 
