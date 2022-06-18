@@ -276,25 +276,26 @@ ul {
     max-width: 70rem;
 }
 .services-content-container {
-    margin-top: 16rem;
+    margin-top: 6rem;
 }
 .wallet-card-container {
     margin-bottom: 20rem;
 }
 .staking-card-container {
-    margin-bottom: 17rem;
+    margin-bottom: 8rem;
 }
 .wallet-card-img {
-    margin: 20rem 10rem 0 0;
+    margin: 10rem 10rem 0 0;
 }
 .staking-card-intro {
     margin: 0 10rem 0 0;
+    padding-top: 10rem;
 }
 .staking-card-padding {
     padding-top: 10rem;
 }
 .staking-img {
-    padding-top: 3rem;
+    padding-top: 10rem;
 }
 .wallet-card-h {
     line-height: 6.4rem;
@@ -361,74 +362,37 @@ ul {
 }
 .staking-img-1 {
     position: absolute;
-    top: 2rem;
+    top: 12rem;
     right: 6.5rem;
 }
 .staking-img-1a {
     position: absolute;
-    top: 6rem;
+    top: 16rem;
     right: 10rem;
     width: 15%;
     z-index: -1;
 }
-.staking-img-1b {
-    position: absolute;
-    top: 23.6rem;
-    right: -4rem;
-    width: 40%;
-}
-.staking-img-1c {
-    position: absolute;
-    top: 14.3rem;
-    right: 12.5rem;
-    width: 40%;
-}
-.staking-img-1d {
-    position: absolute;
-    top: 37.5rem;
-    right: 23rem;
-    width: 55%;
-}
 .staking-img-2 {
     position: absolute;
-    top: 10.5rem;
+    top: 20.5rem;
     right: 5rem;
-}
-.staking-img-2a {
-    position: absolute;
-    top: 3rem;
-    right: -5rem;
-    width: 80%;
-}
-.staking-img-2b {
-    position: absolute;
-    top: 10.5rem;
-    right: 15rem;
-    width: 90%;
-    z-index: -1;
-}
-.staking-img-2c {
-    position: absolute;
-    top: 45rem;
-    right: 33rem;
-    width: 50%;
 }
 .policy-card-padding {
     padding: 10rem 0;
 }
 .policy-card-img1 {
     position: absolute;
-    top: 9rem;
+    top: -6rem;
     left: -1rem;
 }
 .policy-card-img2 {
     position: absolute;
-    top: 8rem;
+    top: -7rem;
     left: 2rem;
 }
 .policy-card-img3 {
     position: absolute;
-    top: 7rem;
+    top: -8rem;
     right: 2rem;
     width: 20%;
     z-index: -1;
@@ -436,7 +400,6 @@ ul {
 .convert-card-padding {
     align-content: center;
     justify-content: center;
-    padding-top: 20rem;
 }
 .convert-card-img1 {
     position: absolute;
@@ -859,9 +822,20 @@ ul {
 }
 
 
-
-
-
+/* @media screen and (max-width: 2850px) {
+    html {
+        font-size: calc(100vw/2850 * 10);
+    }
+    .hero-h {
+        max-width: 100%;
+    }
+    .stats-img {
+        width: 200%;
+    }
+    .partners-h {
+        margin-top: 20rem;
+    }
+} */
 
 
 @media (max-width: 1440px) {
@@ -1133,6 +1107,12 @@ ul {
     .outer-padding {
         margin: 0 4rem;
     }
+    .hero-box-size {
+        margin: 0 0 2.4rem 0;
+    }
+    .hero-bg {
+        background-size: contain;
+    }
     .hero, .bitpowr-p-box, .subscribe-h-container, .questions-h-padding {
         margin: 0;
     }
@@ -1173,11 +1153,11 @@ ul {
     }
     .staking-img-1 {
         top: -10rem;
-        right: -6rem;
+        right: -3rem;
     }
     .staking-img-2 {
         top: -1rem;
-        right: -2rem;
+        right: 1rem;
     }
     .policy-card-img1 {
         top: 104rem;
@@ -1304,11 +1284,14 @@ ul {
     .dev-card-intro {
         padding: 0 0 0 2rem;
     }
+    .dev-card-p {
+        font-size: 1.5rem;
+    }
     .dev-card-text {
-        width: 35rem;
+        width: 30rem;
     }
     .dev-text {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     .footer-nav {
         flex: 1 0 100%;
