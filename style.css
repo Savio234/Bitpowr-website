@@ -134,9 +134,8 @@ a {
     margin: 0;
 }
 img {
-    display: inline-block;
-    vertical-align: middle;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
 }
 .w-100 {
     width: 100%;
@@ -154,6 +153,9 @@ li, ul {
 }
 ul {
     list-style-type: none;
+}
+.relative {
+    position: relative;
 }
 
 
@@ -255,7 +257,6 @@ ul {
 }
 
 .stats {
-    height: 23.6rem;
     margin-top: 13.3rem;
 }
 
@@ -280,21 +281,23 @@ ul {
 }
 .wallet-card-container {
     margin-bottom: 20rem;
+    justify-content: space-between;
+    align-items: center;
 }
 .staking-card-container {
     margin-bottom: 8rem;
+    justify-content: space-between;
+    align-items: center;
 }
 .wallet-card-img {
-    margin: 10rem 10rem 0 0;
+    margin: 0;
 }
 .staking-card-intro {
-    margin: 0 10rem 0 0;
-    padding-top: 10rem;
+    margin: 0;
+    width: 40.6rem;
+    height: 40.2rem;
 }
 .staking-card-padding {
-    padding-top: 10rem;
-}
-.staking-img {
     padding-top: 10rem;
 }
 .wallet-card-h {
@@ -309,6 +312,10 @@ ul {
     line-height: 4rem;
     color: #647aa8;
     margin: 0 0 5.6rem 0;
+}
+.advanced-card-container, .policy-card-container, .convert-card-container {
+    justify-content: space-between;
+    align-items: center;
 }
 .wallet-btn {
     width: 21.1rem;
@@ -337,7 +344,7 @@ ul {
 }
 .features-list-img {
     margin-right: 1.6rem;
-    width: 10%;
+    width: 5%;
 }
 .features-list-h {
     margin: 0;
@@ -359,64 +366,37 @@ ul {
 
 .staking-card-img {
     position: relative;
-}
-.staking-img-1 {
-    position: absolute;
-    top: 12rem;
-    right: 6.5rem;
-}
-.staking-img-1a {
-    position: absolute;
-    top: 16rem;
-    right: 10rem;
-    width: 15%;
-    z-index: -1;
+    width: 46rem;
+    height: 44.8rem;
 }
 .staking-img-2 {
     position: absolute;
-    top: 20.5rem;
-    right: 5rem;
+    top: 6.5rem;
+    right: 0;
 }
 .policy-card-padding {
     padding: 10rem 0;
 }
-.policy-card-img1 {
-    position: absolute;
-    top: -6rem;
-    left: -1rem;
-}
 .policy-card-img2 {
     position: absolute;
-    top: -7rem;
-    left: 2rem;
+    top: -1rem;
+    left: -2rem;
 }
 .policy-card-img3 {
     position: absolute;
-    top: -8rem;
-    right: 2rem;
-    width: 20%;
+    top: -25rem;
+    right: 10rem;
+    width: 15%;
     z-index: -1;
 }
 .convert-card-padding {
     align-content: center;
     justify-content: center;
 }
-.convert-card-img1 {
-    position: absolute;
-    top: -1rem;
-    right: 5rem;
-}
 .convert-card-img2 {
     position: absolute;
-    top: 4rem;
-    right: 1rem;
-}
-.convert-card-img3 {
-    position: absolute;
-    top: 5.5rem;
-    right: 12rem;
-    width: 15%;
-    z-index: -1;
+    top: 6rem;
+    right: -2rem;
 }
 
 
@@ -459,12 +439,14 @@ ul {
     font-size: 1.6rem;
     line-height: 2.4rem;
 }
+.dev-card-check {
+    width: 10%;
+}
 .inner-dev-card-h {
     font-family: Proxima;
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.8rem;
-    padding-top: 1rem;
 }
 .features-margin-bottom {
     margin-bottom: 25rem;
@@ -517,8 +499,8 @@ ul {
 }
 .smallellipse {
     position: absolute;
-    top: 11.2rem;
-    left: 11.5rem;
+    top: 8.2rem;
+    left: 15rem;
     width: 80%;
 }
 .eth, .litecoin, .litecoin1, .litecoin2, .btc, .tether, .doge, .binance {
@@ -532,14 +514,14 @@ ul {
 }
 .eth {
     top: 42rem;
-    left: -1rem;
+    left: 0;
 }
 .litecoin {
     top: 27rem;
-    left: 5rem;
+    left: 7.5rem;
 }
 .binance {
-    top: 6rem;
+    top: 8rem;
     left: 26rem;
 }
 .btc {
@@ -548,25 +530,25 @@ ul {
 }
 .doge {
     top: 6rem;
-    right: 29rem;
+    right: 23rem;
 }
 .tether {
     top: 34rem;
-    right: 3rem;
+    right: -2rem;
 }
 .white-ellipse {
     position: absolute;
-    top: 46rem;
-    right: -1rem;
+    top: 20rem;
+    right: -8rem;
     width: 5%;
 }
 .litecoin1 {
-    top: 18rem;
-    left: 29rem;
+    top: 22rem;
+    left: 33rem;
 }
 .litecoin2 {
-    top: 18rem;
-    right: 31rem;
+    top: 22rem;
+    right: 30rem;
 }
 
 
@@ -598,6 +580,7 @@ ul {
 }
 .stories-card-img {
     margin-right: 1.6rem;
+    width: 20%;
 }
 .stories-card-h {
     font-family: Proxima;
@@ -774,6 +757,8 @@ ul {
 }
 .logo {
     margin-bottom: 4rem;
+    width: 10.3rem;
+    height: 3rem;
 }
 .footer-logo-h, .footer-logo-p {
     font-family: Proxima;
@@ -822,30 +807,6 @@ ul {
 }
 
 
-/* @media screen and (max-width: 2850px) {
-    html {
-        font-size: calc(100vw/2850 * 10);
-    }
-    .hero-h {
-        max-width: 100%;
-    }
-    .stats-img {
-        width: 200%;
-    }
-    .partners-h {
-        margin-top: 20rem;
-    }
-} */
-
-
-@media (max-width: 1440px) {
-    .features-list-p {
-        padding: 0 0 0 3rem;
-    }
-    .features-list-h {
-        padding: 1rem 0 0 0;
-    }
-}
 
 
 @media screen and (max-width: 1023px) {
@@ -864,7 +825,6 @@ ul {
     }
     .logo-padding {
         width: 10rem;
-        padding-top: 1rem;
     }
     .header-nav-section {
         padding: 0;
@@ -886,12 +846,12 @@ ul {
         margin-top: 8rem;
     }
     .wallet-card-container, .staking-card-container {
-        margin-bottom: 8rem;
+        margin-bottom: 5rem;
     }
     .staking-card-padding {
         padding: 0;
     }
-    .wallet-card-img {
+    .wallet-card-img, .staking-card-intro {
         margin: 0 10rem 0 0;
     }
     .staking-img-1a {
@@ -904,7 +864,7 @@ ul {
         right: 2rem;
     }
     .features-list-p {
-        padding-left: .5rem;
+        margin-left: 3.2rem;
     }
     .features-list-img {
         margin-top: .8rem;
@@ -912,17 +872,22 @@ ul {
     .left-curve,.right-curve {
         margin: 0 35rem;
     }
-    .policy-card-img1 {
-        top: 13rem;
-    }
     .policy-card-img2 {
-        top: 12rem;
+        top: 4rem;
+        left: -3rem;
     }
     .policy-card-img3 {
         top: 11rem;
     }
     .convert-card-padding {
         padding-top: 2rem;
+    }
+    .convert-card-img2 {
+        top: 4rem;
+        right: -0.5rem;
+    }
+    .inner-dev-card-h {
+        padding-top: 1.5rem;
     }
     .api {
         margin-right: 2rem;
@@ -944,19 +909,21 @@ ul {
         width: 100%;
     }
     .smallellipse {
-        width: 70%;
+        top: 3.2rem;
+        left: 8rem;
     }
     .eth, .litecoin, .litecoin1, .litecoin2, .btc, .tether, .doge, .binance {
-        width: auto;
+        width: 5%;
         height: auto;
         padding: 0;
     }
     .eth {
         top: 30rem;
+        left: -1rem;
     }
     .litecoin {
         top: 16rem;
-        left: 4rem;
+        left: 5rem;
     }
     .binance {
         top: 4rem;
@@ -975,16 +942,16 @@ ul {
         right: 1rem;
     }
     .white-ellipse {
-        top: 32rem;
+        top: 13rem;
         right: -2rem;
         width: 6%;
     }
     .litecoin1 {
-        top: 14rem;
+        top: 10rem;
         left: 22rem;
     }
     .litecoin2 {
-        top: 14rem;
+        top: 10rem;
         right: 24rem;
     }
     .bitpowr {
@@ -1042,6 +1009,9 @@ ul {
     html {
         font-size: calc(100vw/650 * 10);
     }
+    .outer-padding {
+        margin: 0 6rem;
+    }
     #header {
         display: none;
     }
@@ -1097,6 +1067,141 @@ ul {
         z-index: 100;
         transform: translateX(0);
     }
+    .hero-btn {
+        padding: 1.6rem 4.5rem;
+    }
+    .partners-h {
+        margin: 0 0 4rem;
+    }
+    .partners-container, .partners-container, .bitpowr-box-size {
+        padding: 0;
+    }
+    .stats {
+        margin-top: 2rem;
+    }
+    .wallet-card-container, .staking-card-container, .developers-container, .advanced-card-container, .policy-card-container, .convert-card-container,.subscribe-btn-container {
+        flex-wrap: wrap;
+    }
+    .flex-50 {
+        flex-basis: 100%;
+    }
+    .staking-card-intro, .wallet-card-img, .hero, .bitpowr-p-box, .subscribe-h-container, .questions-h-padding {
+        margin: 0;
+    }
+    .hero-btn {
+        width: 17.2rem;
+        padding: 1.6rem;
+    }
+    .features-list-h {
+        padding-top: 1rem;
+    }
+    .features-list-p {
+        padding-left: 1rem;
+    }
+    .services-btn  {
+        width: 100%;
+    }
+    .left-curve, .right-curve {
+        display: none;
+    }
+    .staking-card-img {
+        margin-top: 5rem;
+    }
+    .policy-card-padding {
+        padding: 5rem 0 0 0;
+    }
+    .policy-card-content {
+        order: 1;
+    }
+    .policy-card-img {
+        order: 2;
+    }
+    .policy-card-img2 {
+        top: 5.5rem;
+        left: -4rem;
+    }
+    .dev-padding, .staking-card-intro {
+        margin: 0 0 4rem 0;
+    }
+    .dev-card-intro {
+        padding: 4rem 0;
+    }
+    .bitpowr-position {
+        margin-bottom: 50rem;
+    }
+    .seemless-p-box {
+        margin: 2rem 0;
+    }
+    .stories-margin-bottom {
+        margin-bottom: 8rem;
+    }
+    .subscribe-content-container {
+        height: 40rem;
+        border-radius: 2rem;
+        margin-bottom: 10rem;
+    }
+    .subscribe-email-form {
+        width: 35rem;
+        margin: 2rem 0 4rem 2rem;
+    }
+    .subscribe-btn {
+        width: 20rem;
+        padding: 1.6rem 6.4rem;
+        margin: 0 1.6rem;
+    }
+    .questions {
+        margin: 2rem 1.6rem 2rem 0;
+    }
+    .questions-container {
+        width: auto;
+        margin-top: 2rem;
+    }
+    .answers {
+        margin-bottom: 2rem;
+    }
+    .faq {
+        padding-bottom: 3rem;
+    }
+    .footer-logo, .company, .support {
+        margin-right: 4rem;
+    }
+    .smallellipse {
+        top: 2.2rem;
+        left: 5.2rem;
+    }
+    .eth {
+        top: 20rem;
+    }
+    .litecoin {
+        top: 14rem;
+        left: 1rem;
+    }
+    .litecoin1 {
+        top: 8rem;
+        left: 12.5rem;
+    }
+    .litecoin2 {
+        top: 8rem;
+        right: 13rem;
+    }
+    .binance {
+        left: 9rem;
+    }
+    .btc {
+        top: -1rem;
+        left: 25rem;
+    }
+    .doge {
+        top: 4rem;
+        right: 9.5rem;
+    }
+    .tether {
+        top: 15rem;
+    }
+    .white-ellipse {
+        top: 9rem;
+        right: -1rem;
+    }
 }
 
 
@@ -1113,28 +1218,12 @@ ul {
     .hero-bg {
         background-size: contain;
     }
-    .hero, .bitpowr-p-box, .subscribe-h-container, .questions-h-padding {
-        margin: 0;
-    }
-    .hero-btn {
-        width: 17.2rem;
-        padding: 1.6rem;
-    }
     .partners-h {
         margin: 0 0 4rem 0;
-    }
-    .partners-container, .bitpowr-box-size {
-        padding: 0;
     }
     .stats {
         height: auto;
         margin-top: 0;
-    }
-    .flex-50 {
-        flex-basis: 100%;
-    }
-    .wallet-card-container, .staking-card-container, .developers-container, .advanced-card-container, .policy-card-container, .convert-card-container,.subscribe-btn-container {
-        flex-wrap: wrap;
     }
     .staking-card-intro, .wallet-card-img {
         margin: 0 0 5rem 0;
@@ -1142,59 +1231,48 @@ ul {
     .wallet-btn {
         margin: 0 1.6rem 0 0;
     }
-    .services-btn  {
-        width: 100%;
-    }
-    .left-curve, .right-curve {
-        display: none;
-    }
-    .features-list-p {
-        padding-left: 1rem;
-    }
     .staking-img-1 {
         top: -10rem;
         right: -3rem;
     }
     .staking-img-2 {
-        top: -1rem;
+        top: 4rem;
         right: 1rem;
     }
-    .policy-card-img1 {
-        top: 104rem;
-    }
     .policy-card-img2 {
-        top: 103rem;
+        top: 1.5rem;
+        left: 2rem;
     }
     .policy-card-img3 {
-        top: 103rem;
+        top: -14.5rem;
+        left: 2.5rem;
     }
     .policy-card-padding {
         padding: 0;
-        margin: 30rem 0 40rem;
+        margin: 2rem;
     }
     .personalization-h {
         margin: 0 0 4rem 0;
     }
-    .convert-card-img1 {
-        top: -7rem;
-        right: 1rem;
-    }
     .convert-card-img2 {
-        top: -4rem;
+        top: 4rem;
         right: -3rem;
     }
     .convert-card-img3 {
         top: -3.5rem;
         right: 6rem;
     }
+    .inner-dev-card-h {
+        padding-top: 2rem;
+    }
+    .features-list-img {
+        width: 10%;
+    }
+    .features-list-p {
+        padding-left: 2.2rem;
+    }
     .bitpowr-box-size {
         margin-top: 5rem;
-    }
-    .bitpowr-position {
-        margin-bottom: 50rem;
-    }
-    .curves-and-coins {
-        margin-top: 10rem;
     }
     .smallellipse {
         top: 4rem;
@@ -1228,52 +1306,16 @@ ul {
         right: .5rem;
     }
     .white-ellipse {
-        top: 16rem;
+        top: 6rem;
         right: -1rem;
     }
     .litecoin1 {
-        top: 6rem;
-        left: 28.5rem;
-    }
-    .litecoin2 {
-        top: 6rem;
+        top: 8rem;
         left: 9rem;
     }
-    .seemless-p-box {
-        margin: 2rem 0;
-    }
-    .stories-margin-bottom {
-        margin-bottom: 8rem;
-    }
-    .subscribe-content-container {
-        height: 45rem;
-        border-radius: 2rem;
-        margin-bottom: 10rem;
-    }
-    .subscribe-email-form {
-        width: 35rem;
-        margin: 2rem 0 4rem 2rem;
-    }
-    .subscribe-btn {
-        width: 20rem;
-        padding: 1.6rem 6.4rem;
-        margin: 0 1.6rem;
-    }
-    .questions {
-        margin: 2rem 1.6rem 2rem 0;
-    }
-    .questions-container {
-        width: auto;
-        margin-top: 2rem;
-    }
-    .answers {
-        margin-bottom: 2rem;
-    }
-    .faq {
-        padding-bottom: 3rem;
-    }
-    .convert-card-container {
-        margin-bottom: 30rem;
+    .litecoin2 {
+        top: 8rem;
+        left: 28.5rem;
     }
     .developers-container {
         padding-bottom: 3rem;
@@ -1293,11 +1335,21 @@ ul {
     .dev-text {
         font-size: 1.2rem;
     }
+    .subscribe-content-container {
+        height: 45rem;
+    }
     .footer-nav {
         flex: 1 0 100%;
     }
     .company, .support {
         margin-right: 3rem;
+    }
+    .support ul {
+        width: 13rem;
+    }
+    .social-links {
+        flex-direction: column;
+        margin-left: 3rem;
     }
     .footer-container {
         flex-direction: column;
